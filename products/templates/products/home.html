@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leather Marketplace</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'products/css/style.css' %}">
+</head>
+<body>
+
+    <h1>Leather Marketplace</h1>
+
+    <h2>Available Products</h2>
+    
+    {% for product in products %}
+    <div style="background:white; padding:15px; margin-bottom:10px;">
+        
+        <h3>
+            <a href="{% url 'product_detail' product.id %}">
+                {{ product.name }}
+            </a>
+        </h3>
+
+        <p>{{ product.description }}</p>
+        <p><strong>Price:</strong> ₦{{ product.price }}</p>
+
+    </div>
+{% empty %}
+    <p>No products available yet.</p>
+{% endfor %}
+
+</body>
+</html>

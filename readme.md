@@ -1,7 +1,7 @@
-# First Name: Efita
-# Last Name: Effiom
 
-## Market Place Web App
+# ARTHUR: Efita Effiom
+
+## Project: Leather Works Market Place Web App
 
 * This project represents my goal of growing as a software engineer by building a real-world web application that solves practical problems for local leather works artisans. Through this project, I aim to strengthen my skills in backend development, database design, web application architecture, problem solving, and full-stack software engineering.
 
