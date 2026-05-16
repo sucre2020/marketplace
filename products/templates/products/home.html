@@ -11,9 +11,13 @@
     <h1>Leather Marketplace</h1>
 
     <h2>Available Products</h2>
-    
+
     {% for product in products %}
     <div style="background:white; padding:15px; margin-bottom:10px;">
+
+        {% if product.image %}
+            <img src="{{ product.image.url }}" alt="{{ product.name }}" style="max-width:150px; float:left; margin-right:15px;">
+        {% endif %}
         
         <h3>
             <a href="{% url 'product_detail' product.id %}">
